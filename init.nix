@@ -51,14 +51,14 @@
       plenary-nvim nvim-metals nvim-cmp cmp-nvim-lsp cmp-vsnip vim-vsnip
     ];
     extraConfig = ''
-      ${builtins.readFile ./nvim/init.vim}
+      ${builtins.readFile ./init.vim}
       if &loadplugins
-        ${builtins.readFile ./nvim/airline.vim}
-        ${builtins.readFile ./nvim/nerdtree.vim}
-        ${builtins.readFile ./nvim/ctrlp.vim}
-        ${builtins.readFile ./nvim/vimTest.vim}
+        ${builtins.readFile ./airline.vim}
+        ${builtins.readFile ./nerdtree.vim}
+        ${builtins.readFile ./ctrlp.vim}
+        ${builtins.readFile ./vimTest.vim}
       lua << EOF
-          ${builtins.readFile ./nvim/lsp.lua}
+          ${builtins.readFile ./lsp.lua}
       EOF
       endif
     '';
