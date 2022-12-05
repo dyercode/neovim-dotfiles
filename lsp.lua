@@ -192,6 +192,10 @@ require('lspconfig')['rust_analyzer'].setup({
   }
 })
 
+require('lspconfig')['hls'].setup({
+  on_attach = on_attach,
+  flags = {},
+})
 api.nvim_create_autocmd("FileType", {
   -- NOTE: You may or may not want java included here. You will need it if you
   -- want basic Java support but it may also conflict if you are using

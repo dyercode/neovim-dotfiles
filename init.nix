@@ -29,6 +29,7 @@
       vim-elm-syntax
       vim-surround vim-repeat
       vim-test
+      haskell-vim
       (pkgs.vimUtils.buildVimPlugin {
               name = "vim-deep-space";
               src = pkgs.fetchFromGitHub {
@@ -75,5 +76,6 @@
     nerdfonts
     nodejs
     coursier # for nvim-metals
+    haskell-language-server
   ];
 }
