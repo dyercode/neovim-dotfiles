@@ -30,6 +30,7 @@
       vim-surround vim-repeat
       vim-test
       haskell-vim
+      vim-pony
       (pkgs.vimUtils.buildVimPlugin {
               name = "vim-deep-space";
               src = pkgs.fetchFromGitHub {
