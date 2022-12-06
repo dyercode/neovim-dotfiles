@@ -31,6 +31,7 @@
       vim-test
       haskell-vim
       vim-pony
+      vim-nix
       (pkgs.vimUtils.buildVimPlugin {
               name = "vim-deep-space";
               src = pkgs.fetchFromGitHub {
@@ -78,5 +79,6 @@
     nodejs
     coursier # for nvim-metals
     haskell-language-server
+    elmPackages.elm elmPackages.elm-test elmPackages.elm-format elmPackages.elm-review elmPackages.elm-language-server
   ];
 }
