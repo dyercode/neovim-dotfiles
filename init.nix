@@ -31,7 +31,6 @@
       vim-test
       haskell-vim
       vim-pony
-      vim-nix
       (pkgs.vimUtils.buildVimPlugin {
               name = "vim-deep-space";
               src = pkgs.fetchFromGitHub {
@@ -52,6 +51,7 @@
               # };
             # })
       plenary-nvim nvim-metals nvim-cmp cmp-nvim-lsp cmp-vsnip vim-vsnip
+      editorconfig-nvim
     ];
     extraConfig = ''
       ${builtins.readFile ./init.vim}

@@ -206,6 +206,7 @@ api.nvim_create_autocmd("FileType", {
   -- something like nvim-jdtls which also works on a java filetype autocmd.
   pattern = { "scala", "sbt", "java"},
   callback = function(args)
+    on_attach()
     require("metals").initialize_or_attach(metals_config)
   end,
   group = nvim_metals_group,
