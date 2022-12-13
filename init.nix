@@ -1,13 +1,11 @@
-{ pkgs, ... }:
-
-{
+{ pkgs, ... }: {
   home.sessionVariables = { EDITOR = "nvim"; };
 
   # nixpkgs.config = {
-    # packageOverrides = pkgs: {
-      # neovim = unstable.neovim;
-      # vimPlugins = unstable.vimPlugins;
-    # };
+  # packageOverrides = pkgs: {
+  # neovim = unstable.neovim;
+  # vimPlugins = unstable.vimPlugins;
+  # };
   # };
   programs.neovim = {
     enable = true;
@@ -32,13 +30,13 @@
       haskell-vim
       vim-pony
       (pkgs.vimUtils.buildVimPlugin {
-              name = "vim-deep-space";
-              src = pkgs.fetchFromGitHub {
-                owner = "tyrannicaltoucan";
-                repo = "vim-deep-space";
-                rev = "126d52f4f77877385cd44d983709053d1aab6635";
-                sha256 = "RAMgJpUxel5Ks951v1nitW+tFyIC5aIXlgv+vwISJL4=";
-              };
+        name = "vim-deep-space";
+        src = pkgs.fetchFromGitHub {
+          owner = "tyrannicaltoucan";
+          repo = "vim-deep-space";
+          rev = "126d52f4f77877385cd44d983709053d1aab6635";
+          sha256 = "RAMgJpUxel5Ks951v1nitW+tFyIC5aIXlgv+vwISJL4=";
+        };
       })
             # looks for bsc and bsb executables in build's node_modules.
             # (pkgs.vimUtils.buildVimPlugin {
