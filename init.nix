@@ -76,6 +76,7 @@
     nerdfonts
     nodejs
     coursier # for nvim-metals
+    nixfmt
     haskell-language-server
     elmPackages.elm elmPackages.elm-test elmPackages.elm-format elmPackages.elm-review elmPackages.elm-language-server
   ];
